@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const uploadToCloudinary = async (file) => {
-  const { data } = await axios.get("http://localhost:5000/api/cloudinary/signature");
+  const { data } = await axios.get("https://live-chat-api-nbq4.onrender.com//api/cloudinary/signature");
 
   const formData = new FormData();
   formData.append("file", file);
